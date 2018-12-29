@@ -19,17 +19,17 @@ class Testcoin_market_cap(unittest.TestCase):
     @classmethod
     def setUpClass(self):
         print("\n>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
-        print("对 time_series/coin_market_cap 的功能模块进行测试...")
+        print("对 coin_market_cap 的功能模块进行测试...")
         print("-------------------------------------------------------------")
 
     @classmethod
     def tearDownClass(self):
         print("-------------------------------------------------------------")
-        print("对 time_series/coin_market_cap 的功能模块进行测试完成")
+        print("对 coin_market_cap 的功能模块进行测试完成")
         print("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n")
 
     def test_coin_market_cap_scrapy_contracts(self):
-        '''在 time_series/coin_market_cap 目录下运行 scrapy check ...'''
+        '''在 coin_market_cap 目录下运行 scrapy check ...'''
 
         current_dir_path = os.path.abspath(os.path.dirname(__file__))
         target_dir_path = os.path.abspath(os.path.join(current_dir_path, 'coin_market_cap/'))
